@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height:150px;
+            width:150px;
+            background: rgb(131,58,180);
+            background: radial-gradient(circle, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+            -moz-border-radius:50px;
+            -webkit-border-radius:50px;
+            left: 43%;
+            position: absolute;
+            border-radius:150px;
+            position: absolute;
+            box-shadow: 2px 2px 5px rgb(0, 0, 0);
+        }
+        .one{
+            top: 50px;
+            z-index: 4;
+        }
+        .two{
+            top: 100px;
+            z-index: 3;
+        }
+        .three{
+            top: 150px;
+            z-index: 2;
+        }
+        .four{
+            top: 200px;
+            z-index: 1;
+        }
+        .five{
+            top: 250px;
+            z-index: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+    <div class="four"></div>
+    <div class="five"></div>
+</body>
+</html>

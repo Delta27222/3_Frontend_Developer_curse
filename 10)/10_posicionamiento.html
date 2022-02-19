@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 200px;
+            height: 200px;
+            background: papayawhip;
+            position: relative;
+            top: 20px;
+        }
+        .item{
+            width: 20px;
+            height: 20px;
+            background-color: pink;
+            position: absolute;    /* Funciona para darle un corral a la etiqueta, del mismo tamnano del contenedor que lo teniene encerrado */
+            right: 0;
+        }
+        nav{
+            width: 100%;
+            height: 60px;
+            background: lightgreen;
+            position: fixed;     /* Este funciona para fijar la etiqueta que lo utiliza, y si se hace un scrool de pantalla este no se movera de su lugar */
+            top: 0;
+        }
+        ul p{
+            position: sticky;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item"></div>
+    </div>
+
+    <nav></nav>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pellentesque ante tristique justo volutpat placerat. Curabitur eu auctor tortor. Sed bibendum imperdiet volutpat. Maecenas lorem diam, egestas et pellentesque non, ullamcorper et purus. Pellentesque felis tellus, hendrerit quis fermentum vel, convallis vel felis. Maecenas et nulla elementum, dictum odio ut, sagittis erat. Praesent vel pharetra dolor, vitae consequat risus. Proin ultricies gravida sodales.
+
+        Vestibulum mollis nisl non libero lacinia, id porttitor felis ullamcorper. Mauris vitae dictum arcu. Aliquam sodales nunc a faucibus euismod. Nam imperdiet fringilla velit, sed convallis tellus consectetur et. Morbi nec pretium nunc. Donec sit amet enim lacus. Sed pharetra augue est. Nullam feugiat nibh viverra, pretium est eu, viverra tortor. Mauris vitae quam lobortis, pretium lectus sed, pretium purus. Cras at orci ipsum.
+        
+        Donec sed vestibulum dolor, vel vestibulum sapien. Donec imperdiet dictum mauris quis pellentesque. Nunc luctus suscipit sapien, quis blandit erat placerat eget. Donec quis arcu in lacus facilisis congue ultricies eu neque. Suspendisse dictum lacus quis posuere euismod. Quisque fringilla blandit dolor, sed lobortis velit. Duis fringilla sollicitudin eros, a lacinia mi ullamcorper dignissim. Donec volutpat consequat mauris. Fusce lobortis molestie leo, sed laoreet lectus hendrerit quis. Morbi porttitor sit amet tortor in faucibus. Proin venenatis, sem vitae suscipit pellentesque, libero leo lacinia turpis, in sodales mi nulla at enim. Aenean non velit eget erat hendrerit elementum vel eget augue.
+        
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis metus magna, scelerisque nec dui sed, ultrices mollis enim. In nec sapien lacus. Aliquam accumsan metus nec bibendum ultricies. Mauris elit risus, gravida ac scelerisque et, varius in augue. Etiam eget libero fringilla, fermentum justo quis, rhoncus ipsum. Suspendisse lectus tortor, pharetra et tempor a, iaculis in sapien. Mauris semper ornare arcu eu condimentum. Aenean vel dui vel risus dapibus tristique sit amet vel sem. Praesent venenatis lacus justo, in rhoncus odio convallis non. Sed malesuada ligula at sem molestie, luctus blandit augue elementum. Sed molestie ligula urna, at fringilla magna condimentum eu.
+        
+        Etiam pellentesque eget nisl et maximus. Sed sed massa id nibh maximus rutrum. Suspendisse potenti. Integer pellentesque vel lectus at blandit. Praesent sed ligula elit. Integer at massa dictum, porta ipsum vel, finibus nunc. NamLorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pellentesque ante tristique justo volutpat placerat. Curabitur eu auctor tortor. Sed bibendum imperdiet volutpat. Maecenas lorem diam, egestas et pellentesque non, ullamcorper et purus. Pellentesque felis tellus, hendrerit quis fermentum vel, convallis vel felis. Maecenas et nulla elementum, dictum odio ut, sagittis erat. Praesent vel pharetra dolor, vitae consequat risus. Proin ultricies gravida sodales.
+
+        Vestibulum mollis nisl non libero lacinia, id porttitor felis ullamcorper. Mauris vitae dictum arcu. Aliquam sodales nunc a faucibus euismod. Nam imperdiet fringilla velit, sed convallis tellus consectetur et. Morbi nec pretium nunc. Donec sit amet enim lacus. Sed pharetra augue est. Nullam feugiat nibh viverra, pretium est eu, viverra tortor. Mauris vitae quam lobortis, pretium lectus sed, pretium purus. Cras at orci ipsum.
+        
+        Donec sed vestibulum dolor, vel vestibulum sapien. Donec imperdiet dictum mauris quis pellentesque. Nunc luctus suscipit sapien, quis blandit erat placerat eget. Donec quis arcu in lacus facilisis congue ultricies eu neque. Suspendisse dictum lacus quis posuere euismod. Quisque fringilla blandit dolor, sed lobortis velit. Duis fringilla sollicitudin eros, a lacinia mi ullamcorper dignissim. Donec volutpat consequat mauris. Fusce lobortis molestie leo, sed laoreet lectus hendrerit quis. Morbi porttitor sit amet tortor in faucibus. Proin venenatis, sem vitae suscipit pellentesque, libero leo lacinia turpis, in sodales mi nulla at enim. Aenean non velit eget erat hendrerit elementum vel eget augue.
+        
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis metus magna, scelerisque nec dui sed, ultrices mollis enim. In nec sapien lacus. Aliquam accumsan metus nec bibendum ultricies. Mauris elit risus, gravida ac scelerisque et, varius in augue. Etiam eget libero fringilla, fermentum justo quis, rhoncus ipsum. Suspendisse lectus tortor, pharetra et tempor a, iaculis in sapien. Mauris semper ornare arcu eu condimentum. Aenean vel dui vel risus dapibus tristique sit amet vel sem. Praesent venenatis lacus justo, in rhoncus odio convallis non. Sed malesuada ligula at sem molestie, luctus blandit augue elementum. Sed molestie ligula urna, at fringilla magna condimentum eu.
+        
+        Etiam pellentesque eget nisl et maximus. Sed sed massa id nibh maximus rutrum. Suspendisse potenti. Integer pellentesque vel lectus at blandit. Praesent sed ligula elit. Integer at massa dictum, porta ipsum vel, finibus nunc. Nam</p>
+
+        <ul>
+            <p>Frutas</p>
+            <li>Manzana</li>
+            <li>Pera</li>
+            <li>Sandia</li>
+        </ul>
+        <ul>
+            <p>Frutas</p>
+            <li>Manzana</li>
+            <li>Pera</li>
+            <li>Sandia</li>
+        </ul>
+        <ul>
+            <p>Frutas</p>
+            <li>Manzana</li>
+            <li>Pera</li>
+            <li>Sandia</li>
+        </ul>
+        <ul>
+            <p>Frutas</p>
+            <li>Manzana</li>
+            <li>Pera</li>
+            <li>Sandia</li>
+        </ul>
+        <ul>
+            <p>Frutas</p>
+            <li>Manzana</li>
+            <li>Pera</li>
+            <li>Sandia</li>
+        </ul>
+        <ul>
+            <p>Frutas</p>
+            <li>Manzana</li>
+            <li>Pera</li>
+            <li>Sandia</li>
+        </ul>
+        <ul>
+            <p>Frutas</p>
+            <li>Manzana</li>
+            <li>Pera</li>
+            <li>Sandia</li>
+        </ul>
+        <ul>
+            <p>Frutas</p>
+            <li>Manzana</li>
+            <li>Pera</li>
+            <li>Sandia</li>
+        </ul>
+                <ul>
+            <p>Frutas</p>
+            <li>Manzana</li>
+            <li>Pera</li>
+            <li>Sandia</li>
+        </ul>
+                <ul>
+            <p>Frutas</p>
+            <li>Manzana</li>
+            <li>Pera</li>
+            <li>Sandia</li>
+        </ul>
+                <ul>
+            <p>Frutas</p>
+            <li>Manzana</li>
+            <li>Pera</li>
+            <li>Sandia</li>
+        </ul>        <ul>
+            <p>Frutas</p>
+            <li>Manzana</li>
+            <li>Pera</li>
+            <li>Sandia</li>
+        </ul>
+        <ul>
+            <p>Frutas</p>
+            <li>Manzana</li>
+            <li>Pera</li>
+            <li>Sandia</li>
+        </ul>
+
+                <ul>
+            <p>Frutas</p>
+            <li>Manzana</li>
+            <li>Pera</li>
+            <li>Sandia</li>
+        </ul>
+                <ul>
+            <p>Frutas</p>
+            <li>Manzana</li>
+            <li>Pera</li>
+            <li>Sandia</li>
+        </ul>
+                <ul>
+            <p>Frutas</p>
+            <li>Manzana</li>
+            <li>Pera</li>
+            <li>Sandia</li>
+        </ul>
+        <ul>
+            <p>Frutas</p>
+            <li>Manzana</li>
+            <li>Pera</li>
+            <li>Sandia</li>
+        </ul>
+        <ul>
+            <p>Frutas</p>
+            <li>Manzana</li>
+            <li>Pera</li>
+            <li>Sandia</li>
+        </ul>
+        <ul>
+            <p>Frutas</p>
+            <li>Manzana</li>
+            <li>Pera</li>
+            <li>Sandia</li>
+        </ul>
+        <ul>
+            <p>Frutas</p>
+            <li>Manzana</li>
+            <li>Pera</li>
+            <li>Sandia</li>
+        </ul>
+        <ul>
+            <p>Frutas</p>
+            <li>Manzana</li>
+            <li>Pera</li>
+            <li>Sandia</li>
+        </ul>
+
+</body>
+</html>

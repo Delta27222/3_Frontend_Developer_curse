@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;  /* Cabe destacar que los padres son los que llevan el display FLEX */
+            background: papayawhip;
+            justify-content: center;   /* Esto es para que se coloque en el CENTRO DE LA MIMA LINEA sin importar cual sea el eje este posicionado(VERTICAL U HORIZONTAL)*/
+
+            align-items: center;       /* Esto funciona para centrar en MITAD DE PANTALLA (EN EL CENTRO DE AMBOS EJES CARTESIANOS)*/
+            height: 300px;
+           flex-direction: column;     /* Esto funciona para hacer una FILA o una COLUMNA */
+        }
+        .item{
+            width: 30px;
+            height: 30px;
+            background: purple;
+        }
+        .container .item:nth-child(2n+1){
+        background: cyan;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div> 
+    </div>
+</body>
+</html>

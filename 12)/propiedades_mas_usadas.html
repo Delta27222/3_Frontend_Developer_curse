@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>        
+        section{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card{
+            width: 200px;
+            height: 200px;
+            background: papayawhip;
+            border-radius: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card img{
+            width: 100%;
+            /* Estos ultimos los uso para cortar la imagen */
+            object-fit: cover;
+            height: 35%;
+        }
+        .card p {
+            text-align: center;
+        }
+        .card p:nth-child(2){
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="card"> 
+            <img src="https://images.pexels.com/photos/965345/pexels-photo-965345.jpeg?cs=srgb&dl=pexels-markus-spiske-965345.jpg&fm=jpg" alt="Avatar_Angel" class="cortar">
+            <p>Codear es mi vida</p>
+            <p>I love this!!</p>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        body {
+            background: #2C3E50;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #4CA1AF, #2C3E50);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #4CA1AF, #2C3E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            font-family:'Mukta';
+            font-size: 1.2rem;
+            color: rgba(32, 32, 34, 0.993);
+            line-height: 1.2rem;
+        }
+        .container{
+            width: 100%;
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+        }
+        .card{
+            width: 400px;
+            height: 600px;
+            background: rgb(252, 248, 248);
+            border-radius: 20px;
+            box-shadow: 0px 0px 46px 10px rgba(0,0,0,0.72);
+            -webkit-box-shadow: 0px 0px 46px 10px rgba(0,0,0,0.72);
+            -moz-box-shadow: 0px 0px 46px 10px rgba(0,0,0,0.72);
+            overflow: hidden;
+            position: relative;
+            margin-top: 55px;
+        }
+        .card img:nth-child(1) { 
+            width: 100%;
+            object-fit: cover;
+            height: 25%;
+            z-index: 4;
+        }
+        .card img:nth-child(2){
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            position: absolute;
+            left: 150px;
+            top: 17%;
+            z-index: 5; 
+        }
+        .user_photo{
+            box-shadow: 0px 0px 23px 9px rgba(0,0,0,0.32);
+            -webkit-box-shadow: 0px 0px 23px 9px rgba(0,0,0,0.32);
+            -moz-box-shadow: 0px 0px 23px 9px rgba(0,0,0,0.32);
+            /* border: 2px solid gray; */
+        }
+        .div_container{
+            position: relative;
+            text-align: center;
+        }
+        .div_container h1 {
+            position: relative;
+            top: 65px;
+        }
+        .div_container p {
+            position: relative;
+            top: 65px;
+            font-size: small;
+        }
+        .loation {
+            color: red;
+        }
+
+     
+        .main-container__contact .local {
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            background-image: url(https://cdn-icons-png.flaticon.com/512/535/535137.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .main-container__contact .mail {
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            background-image: url(https://cdn-icons-png.flaticon.com/512/726/726623.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .main-container__contact p {
+            display: inline-block;
+            margin-left:2px;
+            margin-right: 5px;
+        }
+
+        .container_social{
+            position: relative;
+            top: 100px;
+        }
+        .container_social .face  {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background-image: url(https://cdn-icons-png.flaticon.com/512/2111/2111398.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin-right: 10px;
+        }
+
+        .container_social .insta {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background-image: url(https://cdn-icons-png.flaticon.com/512/2111/2111463.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+        .container_social .linkedin {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background-image: url(https://cdn-icons.flaticon.com/png/512/3536/premium/3536505.png?token=exp=1645332805~hmac=0c90112b4cdf9167a34be216285cff95);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin-left: 10px;
+        }
+        .container_social h6 {
+            display: inline-block;
+            position: relative;
+            bottom: 10px;
+            margin-right: 20px;
+        }
+
+        footer {
+            display: flex;
+            width: 100%;
+            height: 63px;
+            background-color: #339bdf;
+            justify-content: center;
+            align-items: center;
+            border-radius: 0 0 15px 15px;
+            position: relative;
+            top: 157px;
+        }
+
+        footer p {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: white;
+            text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.46);
+            margin-top: 15.5px;
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <div class="card">
+            <img src="https://images.pexels.com/photos/5707602/pexels-photo-5707602.jpeg?cs=srgb&dl=pexels-ben-mack-5707602.jpg&fm=jpg" alt="playa_hermosa">
+            <img src="https://lh3.googleusercontent.com/UCCtClvL-tga7aH5EShKX83qpAZMfqC6ml9Y7vVYvmzRMcUrN-yWo6ov0VQJEhSNR85fBOp5AYJN95oeN1Q9AiOSd_Vq0WCJwmwIwP60et4jNjNz-WOjFXZCKK0qBlB0Zn65Jh0OiwZn4vTgWLTFwoM-SY4IrKAGlz0tJt8lnhh9y4uKBCYZjv8EUO7nM7d8MPIwipts2SIuDwE97TderInq5fctr5BFJQHEsaigoLRzgNF4n2uu7zg9Cuw9VOTBfneBoQAPHnNmCtdj0JVXS5XLKhTmtJBKdGGbKzMV4eoAg3R_j4HrW06QEnYJPsyq6s8tCTRNQkTzTW19g_vP7rZfyWb13LZZUm2XxuFE3rq2OertXHCanBQJth8Zkfkza4-NUIwCS8o93FEgTJjO6fpYS6SuHRLLel0aja0giek3BI0vpd_NSfbDW3Ql4pgTOO34Q9PLoey6pM7UfddNTElVhjscDVQvpaOoWZPxF7cxl3n2dHvUMDB-1V8PUOVj3rtsIfGUCIPywtitFbr_ndia8FNhzBjqWD0D_wQBGiPFs_0T0dDJXZjoOHg-J_urts3N6AfdoG4F-Z7FEcvaqY6zJYfXOkmd2sOA1cM7C78__iuw5d2jgHa_UpQ2-Pyo7GqF59otniGNLqVt0cl6nyEjEydDGAJwi2bB_EcUkGfY5DmnJv8BXI7uz49SQqiS0vDx-SjVXDZtQBpuU9QXEyI=w670-h872-no?authuser=0" alt="delta27222" class="user_photo">
+            <div class="div_container">
+                <h1>Angel Hernandez</h1>
+                <p>I'm a Student of 6th semester of computer<br> Engineering, searching for knowledges to<br> learn more and more about my carrer.</p>
+                <section class="main-container__contact">
+                    <p><span class="local"></span>Venezuela</p>
+                    <p><span class="mail"></span> Send E-mail</p>
+                </section>
+                <section class="container_social">
+                    <h6>Social networks:</h6>
+                    <span class="face"></span>
+                    <span class="insta"></span>
+                    <span class="linkedin"></span>
+                </section>
+            </div>
+            
+            <footer>
+                <p>Seguir</p>
+            </footer>
+            <!-- <section class="container_button_botton">
+                <button type="button" class="btn btn-secondary">
+                <button type="button" class="btn btn-secondary">Hola
+            </section> -->
+        </div>
+    </section>
+</body>
+</html>

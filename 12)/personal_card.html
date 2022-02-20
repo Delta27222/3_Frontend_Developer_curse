@@ -19,6 +19,7 @@
         }
         .container{
             width: 100%;
+
             display: flex; 
             justify-content: center;
             align-items: center;
@@ -34,6 +35,7 @@
             overflow: hidden;
             position: relative;
             margin-top: 55px;
+            margin-bottom: 50px;
         }
         .card img:nth-child(1) { 
             width: 100%;
@@ -59,6 +61,7 @@
         .div_container{
             position: relative;
             text-align: center;
+            height: 100%;
         }
         .div_container h1 {
             position: relative;
@@ -73,7 +76,6 @@
             color: red;
         }
 
-     
         .main-container__contact .local {
             display: inline-block;
             width: 15px;
@@ -101,65 +103,58 @@
 
         .container_social{
             position: relative;
-            top: 100px;
+            top: 63px;
         }
-        .container_social .face  {
-            display: inline-block;
+        .container_social .a .img {
             width: 40px;
             height: 40px;
-            background-image: url(https://cdn-icons-png.flaticon.com/512/2111/2111398.png);
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            margin-right: 10px;
-        }
-
-        .container_social .insta {
-            display: inline-block;
-            width: 40px;
-            height: 40px;
-            background-image: url(https://cdn-icons-png.flaticon.com/512/2111/2111463.png);
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            margin-right: 10px;
-            margin-left: 10px;
-        }
-        .container_social .linkedin {
-            display: inline-block;
-            width: 40px;
-            height: 40px;
-            background-image: url(https://cdn-icons.flaticon.com/png/512/3536/premium/3536505.png?token=exp=1645332805~hmac=0c90112b4cdf9167a34be216285cff95);
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            margin-left: 10px;
         }
         .container_social h6 {
             display: inline-block;
             position: relative;
-            bottom: 10px;
+            bottom: -2px;
             margin-right: 20px;
         }
+        
+        .container_follow{
+            display: grid;
+            width: 400px;
+            height: 100px;
+            grid-template-columns: 1fr 1fr;  /*          Indica la fraccion de espacio que se tomara en las comlumnas */
+            position: relative;
+            top: 112px; 
+            background: #D5DBDB;
+        }
+        .container_follow > div{
+            border-top: 1px solid rgb(0, 0, 0);
+            border-right: 1px solid rgb(0, 0, 0);
+            border-bottom: 1px solid #0000;
+        }
 
-        footer {
+
+        footer {            
+            position: relative;
+            top: 0;
+        }
+
+        footer button {           
+            justify-content: center;
+            align-items: center;
             display: flex;
             width: 100%;
             height: 63px;
-            background-color: #339bdf;
-            justify-content: center;
-            align-items: center;
-            border-radius: 0 0 15px 15px;
+            background-color: #339bdf;            
+            border: none;
+            border-bottom-left-radius: 20px; 
+            border-bottom-right-radius: 20px; 
             position: relative;
-            top: 157px;
         }
-
-        footer p {
-            font-size: 1.3rem;
-            font-weight: bold;
-            color: white;
-            text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.46);
-            margin-top: 15.5px;
+        button:hover{
+            background-color: #0083B0;
+        }
+        footer button p{
+            position: absolute;
+            top: 20px;
         }
     </style>
 </head>
@@ -176,20 +171,26 @@
                     <p><span class="mail"></span> Send E-mail</p>
                 </section>
                 <section class="container_social">
-                    <h6>Social networks:</h6>
-                    <span class="face"></span>
-                    <span class="insta"></span>
-                    <span class="linkedin"></span>
+                    <h6>Projects:</h6>
+                    <a href="https://github.com/Delta27222" class="a">
+                        <img class="img" src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="">
+                    </a>
                 </section>
+
+                <div class="container_follow">
+                    <div id="item1">
+                        <h5><b>4,900</b></h5>
+                        <h6>Followers</h6>
+                    </div>
+                    <div id="item2">
+                        <h5><b>1,035</b></h5>
+                        <h6>Following</h6>
+                    </div>
+                </div>                
             </div>
-            
             <footer>
-                <p>Seguir</p>
+                <button><p>Follow</p></button>
             </footer>
-            <!-- <section class="container_button_botton">
-                <button type="button" class="btn btn-secondary">
-                <button type="button" class="btn btn-secondary">Hola
-            </section> -->
         </div>
     </section>
 </body>
